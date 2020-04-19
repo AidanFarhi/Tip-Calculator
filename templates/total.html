@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block header %}Tip Calculator{% endblock %}
+
+<form>
+
+<h2>Enter Bill Amount</h2>
+
+    <input type="number" step="0.01" action="post" placeholder="$0.00" name="bill">
+
+<h2>Enter Tip Percentage</h2>
+
+    <input type="number" step="0.01" action="post" placeholder="%" name="tip">
+
+</form>
+
+{% block body %}{% endblock %}

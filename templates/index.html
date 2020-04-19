@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block header %}Tip Calculator{% endblock %}
+
+{% block body %}
+
+<form action="{{ url_for( 'total' ) }}" method="post">
+
+<h2>Enter Bill Amount</h2>
+
+    <input type="number" step="0.01" placeholder="$0.00" name="bill">
+
+<h2>Enter Tip Percentage</h2>
+
+    <input type="number" step="0.01" placeholder="%" name="tip">
+
+<button>Calculate</button>
+
+</form>
+
+<h2>Tip Total</h2>
+
+${{ total }}
+
+{% endblock %}
